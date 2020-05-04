@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript</title>
+</head>
+<body>
+    <br>
+    <div id="app">
+        <!-- <button onclick="mostraAlert()">Me pressione</button> -->
+        <!-- <button onmouseover="mostraAlert()">Me pressione</button> -->
+        <!-- <input type="text" onkeypress="mostraAlert()"> -->
+        <!-- <input type="text" class="nome" name="nome" id="nome" /> -->
+        <!-- <input type="text" name="nome" /> -->
+        <!-- <input type="text" name="" id="nomeElemento">
+        <button class="botao">Adicionar</button>
+        <button class="botao2">Adicionar 2</button> -->
+
+        <div class="box"></div>
+    </div>
+
+    <script>
+        /*
+        function mostraAlert() {
+            alert('Botão foi clicado!');
+        }
+        */
+
+        // TRABALHANDO COM A DOM ==========================================
+
+        /*
+            var inputElement = document.getElementById('nome');
+            var inputElement = document.getElementsByTagName('input')[0];
+            var inputElement = document.getElementsByClassName('nome')[0];
+            var inputElement = document.querySelector('body div#app input');
+            var inputElement = document.querySelector('input[name=nome]');
+            
+            console.log(inputElement);
+       
+            var inputElement2 = document.querySelector('input[name=nome]');
+            var btnElement = document.querySelector('button.botao2');
+
+            btnElement.onclick = function() {
+                var text = inputElement2.value;
+                alert('Botão foi clicado! ' + text);
+            }
+        
+            */
+
+        // LIDANDO COM ELEMENTOS ==========================================
+
+            // var linkElement = document.createElement('a');
+            // linkElement.setAttribute('href', 'http://rocketseat.com.br');
+            // linkElement.setAttribute('title', 'site da Rocketseat');
+
+            // var textElement = document.createTextNode('Acessar site da Rocketseat');
+            // linkElement.appendChild(textElement);
+        
+            // var containerElement = document.querySelector('#app');
+            // containerElement.appendChild(linkElement);
+
+            // var inputElement = document.querySelector('#nomeElemento');
+            // containerElement.removeChild(inputElement);
+
+
+        // ALTERANDO ESTILOS ==========================================
+
+
+            var boxElement = document.querySelector('.box');
+            
+            boxElement.style.width  ='100px';
+            boxElement.style.height = '100px';
+            boxElement.style.backgroundColor = '#f00';
+
+    </script>   
+</body>
+</html>
