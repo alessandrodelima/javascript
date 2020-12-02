@@ -99,9 +99,7 @@ function printEvent(e) {
   console.log(`Type: ${e.type}`);
 }
 
-*/
-
-
+//=====================================================
 
 const searchForm = document.getElementById('search'),
       searchInput = document.getElementById('search-course');
@@ -127,4 +125,66 @@ function printEvent(e) {
   //Print the value from the input 
   console.log(searchInput.value);
   console.log(`Type: ${e.type}`);
+}
+
+
+// Event Bubbling
+
+// Variables 
+
+const card = document.querySelector('.card'),
+      infoCards = document.querySelector('.info-card'),
+      addCartBtn = document.querySelector('.add-to-cart');
+
+      // console.log(card);
+      // console.log(infoCards);
+      // console.log(addCartBtn);
+
+// Event Listeners 
+
+card.addEventListener('click', function(e) {
+  console.log('You clicked the card');
+  e.stopPropagation();
+})
+
+infoCards.addEventListener('click', function(e) {
+  console.log('You clicked the info');
+  e.stopPropagation();
+})
+
+addCartBtn.addEventListener('click', function(e) {
+  console.log('You clicked the add to cart btn');
+  e.stopPropagation();
+})
+*/
+// Delegation 
+
+const shoppingCart = document.querySelector('#shopping-cart');
+//document.body.addEventListener('click', removeProductFromCart);
+shoppingCart.addEventListener('click', removeProductFromCart);
+
+
+function removeProductFromCart (e) {
+  //console.log(e);
+  //console.log(e.target);
+  
+  if(e.target.classList.contains('remove')) {
+    //console.log('Yes!!');
+    e.target.parentElement.parentElement.remove(); 
+  } else {
+    console.log('No');
+  }
+
+}
+
+// Add to cart 
+
+const courseList = document.querySelector('#courses-list');
+
+courseList.addEventListener('click', addToCart);
+
+function addToCart (e) {
+  if(e.target.classList.contains('add-to-cart')){
+    console.log('Course added');
+  }
 }
