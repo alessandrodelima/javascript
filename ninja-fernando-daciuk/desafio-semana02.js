@@ -122,5 +122,13 @@ function threeArgs (x, y, z) {
 
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
+threeArgs(); //false
+threeArgs(1); // 1
+threeArgs(1, 2); // 3 
+threeArgs(1, 2, 3); //1
 
+// ----------------------------------------------------Tipos de dados e objetos ---------------------------
+
+var objeto = {propriedade: 'valor', propriedade2: 10, propriedade3: true};
+objeto
 
