@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício de Array, Function, Object</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <section class="container-fluid">
+      <article>
+        <form class="form" action="" method="get">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="nome" class="control-label">Nome</label>
+                <input type="text" name="nome" class="form-control nome" />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="sobrenome" class="control-label">Sobrenome</label>
+                <input
+                  type="text"
+                  name="sobrenome"
+                  class="form-control sobrenome"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="peso" class="control-label">Peso</label>
+                <input type="text" name="peso" class="form-control peso" />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="altura" class="control-label">Altura</label>
+                <input type="text" name="altura" class="form-control altura" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </article>
+      <article>
+        <br />
+        <div class="row">
+          <div class="col-md-6">
+            <table class="table table-striped table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Sobrenome</th>
+                  <th>Peso</th>
+                  <th>Altura</th>
+                </tr>
+              </thead>
+              <tbody class="resultado"></tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
