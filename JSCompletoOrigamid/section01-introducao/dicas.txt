@@ -1,0 +1,97 @@
+Curso completo de JavaScript 
+
+JavaScript Completo ES6+
+
+var, const, let, class, async, await, fetch, promise e mais
+
+Pré-requisitos
+
+HTML/ class
+
+Ferramentas 
+
+VSCode, Nodejs, NPM e Git
+
+--------------------------------------------------------------------------------
+Grade 
+--------------------------------------------------------------------------------
+
+Introdução
+
+Sobre a linguagem e configuração do ambiente. 
+
+JavaScript para iniciantes 
+--------------------------
+
+Dados, variáveis, operadores, booleans, funções, objetos, arrays, loops e mais. 
+
+DOM para Iniciantes 
+-------------------
+
+Início do projeto, selecionar e manipular o dom, eventos, transversing e mais. 
+
+Objetos 
+Constructor functions, prototype, String, Array, Math, Number, Function, Object. 
+
+Efeitos no DOM
+
+Modules, event bubble, setTimeout, forms e mais. 
+
+JavaScript Assíncrono 
+
+Promises, Fetch(novo AJAX), JSON, API, HTTP, Async / Await e mais. 
+-------------------
+Classes 
+-------------------
+
+Class, Constructor, get, set, extends e mais. 
+
+-------------------
+Mais JavaScript 
+-------------------
+IIFE, factory function, clojures, debugging, destructuring, rest, iterables. 
+
+-------------------
+Regular Expression 
+-------------------
+
+Principais padrões e métodos. 
+
+-------------------
+Automação Front End
+-------------------
+
+CLI, NOM, ESLint, Webpack, Babel e git. 
+
+-------------
+Projeto Final 
+-------------
+Refatoração do projeto utilizando classes. Praticando com Git, ESLint e mais. 
+
+----------
+Slide
+----------
+
+Criação do plugin de slide. 
+=======================================================================================
+
+-------------
+A Linguagem 
+-------------
+
+Linguagem de programação interpretada. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
