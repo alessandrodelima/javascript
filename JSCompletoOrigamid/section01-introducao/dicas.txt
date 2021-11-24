@@ -83,15 +83,7 @@ Linguagem de programação interpretada.
 
 
 
-
-
-
-
-
-
-
-
-
+Editar arquivo local 	Ctrl + Shift + P 	EditorContextMenus.CodeWindow.EditLocalFile
 
 
 
