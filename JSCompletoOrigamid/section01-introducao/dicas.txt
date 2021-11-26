@@ -12,6 +12,8 @@ Ferramentas
 
 VSCode, Nodejs, NPM e Git
 
+
+https://www.origamid.com/slide/javascript-completo-es6/#/0101-javascript-completo-es6/1
 --------------------------------------------------------------------------------
 Grade 
 --------------------------------------------------------------------------------

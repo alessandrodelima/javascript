@@ -27,16 +27,38 @@ console.log(sobrenome, cidade);
 var semDefinir; 
 console.log(semDefinir);
 
-/*
-    Os nomes podem iniciar com $, _, ou letras. 
-    podem contar números mas não iniciar com eles. 
+//console.log(aindaNaoDefine);
+// Hoinsting --> São movidas para cima do código, porém o valor atribuído não é movido. 
 
-    Case sensitive
-    nome é diferente de Nome
+var comida;
+console.log(comida);
+var comida = 'Pizza'
+console.log(comida);
 
-    Não utilizar palavras reservadas
-    https://www.w3schools.com/js/js_reserved.asp
+var time = 'Vasco';
+time = 'Flamengo';
+console.log(time);
 
-    Camel case 
-    É comum nomearmos assim: abrirModal
-    */
+// EXERCÍCIOS 
+
+// Declarar uma variável com o seu nome
+let nomeExercicio = 'Hermenegildo';
+
+//Declarar uma variável com a sua idade. 
+let idadeExercicio = '25'; 
+
+//Declarar uma variável com a sua comida favorita e não atribuir valor
+let comidaFavorita; 
+
+//Atribuir valor a sua comida favorita 
+comidaFavorita = 'Lasanha';
+
+// Declrar 5 variáveis diferentes sem valores. 
+ 
+let professor, endereco, rua, municipio, cep;
+
+
+
+console.log('Nome:' + nomeExercicio);
+console.log('Idade: '+idadeExercicio);
+console.log('Comida favorita: '+comidaFavorita);
