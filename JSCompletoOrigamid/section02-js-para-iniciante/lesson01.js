@@ -62,3 +62,4 @@ let professor, endereco, rua, municipio, cep;
 console.log('Nome:' + nomeExercicio);
 console.log('Idade: '+idadeExercicio);
 console.log('Comida favorita: '+comidaFavorita);
+
