@@ -63,25 +63,19 @@ function mostraConsole() {
 }
 addEventListener('click', mostraConsole);
 
-/*
+//PODE OU NÃO RETORNAR UM VALOR
+//Quando não definimos o return, ela irá retornar undefined. O código interno da função é executado normalmente, independente de existir valor de return ou não.
 
-
-
-Funções anônimas são aquelas em que o nome da função não é definido, escritas como function() {} ou () => {}
-
-PODE OU NÃO RETORNAR UM VALOR
-Quando não definimos o return, ela irá retornar undefined. O código interno da função é executado normalmente, independente de existir valor de return ou não.
-
-function imc(peso, altura) {
+function imc2(peso, altura) {
   const imc = peso / (altura ** 2);
   console.log(imc);
 }
 
-imc(80, 1.80); // retorna o imc
-console.log(imc(80, 1.80)); // retorna o imc e undefined
-COPIAR
-VALORES RETORNADOS
-Uma função pode retornar qualquer tipo de dado e até outras funções.
+imc2(80, 1.80); // retorna o imc
+console.log(imc2(80, 1.80)); // retorna o imc e undefined
+
+//VALORES RETORNADOS
+//Uma função pode retornar qualquer tipo de dado e até outras funções.
 
 function terceiraIdade(idade) {
   if(typeof idade !== 'number') {
@@ -92,20 +86,20 @@ function terceiraIdade(idade) {
     return false;
   }
 }
-COPIAR
-Cuidado, retornar diferentes tipos de dados na mesma função não é uma boa ideia.
+console.log(terceiraIdade(60));
 
-ESCOPO
-Variáveis e funções definidas dentro de um bloco {}, não são visíveis fora dele.
+//ESCOPO
+//Variáveis e funções definidas dentro de um bloco {}, não são visíveis fora dele.
 
 function precisoVisitar(paisesVisitados) {
   var totalPaises = 193;
   return `Ainda faltam ${totalPaises - paisesVisitados} paises para visitar`
 }
-console.log(totalPaises); // erro, totalPaises não definido
-COPIAR
-ESCOPO LÉXICO
-Funções conseguem acessar variáveis que foram criadas no contexto pai
+//console.log(totalPaises); // erro, totalPaises não definido
+console.log(precisoVisitar(10)); // erro, totalPaises não definido
+
+//ESCOPO LÉXICO
+//Funções conseguem acessar variáveis que foram criadas no contexto pai
 
 var profissao = 'Designer';
 
@@ -120,11 +114,11 @@ function dados() {
   return outrosDados();
 }
 
-dados(); // Retorna 'André, 29, Rio de Janeiro, Designer'
-outrosDados(); // retorna um erro
-COPIAR
-HOISTING
-Antes de executar uma função, o JS 'move' todas as funções declaradas para a memória
+console.log(dados()); // Retorna 'André, 29, Rio de Janeiro, Designer'
+//outrosDados(); // retorna um erro
+
+//HOISTING
+//Antes de executar uma função, o JS 'move' todas as funções declaradas para a memória
 
 imc(80, 1.80); // imc aparece no console
 
@@ -132,36 +126,3 @@ function imc(peso, altura) {
   const imc = peso / (altura ** 2);
   console.log(imc);
 }
-COPIAR
-EXERCÍCIO
-// Crie uma função para verificar se um valor é Truthy
-
-// Crie uma função matemática que retorne o perímetro de um quadrado
-// lembrando: perímetro é a soma dos quatro lados do quadrado
-
-// Crie uma função que retorne o seu nome completo
-// ela deve possuir os parâmetros: nome e sobrenome
-
-// Crie uma função que verifica se um número é par
-
-// Crie uma função que retorne o tipo de
-// dado do argumento passado nela (typeof)
-
-// addEventListener é uma função nativa do JavaScript
-// o primeiro parâmetro é o evento que ocorre e o segundo o Callback
-// utilize essa função para mostrar no console o seu nome completo
-// quando o evento 'scroll' ocorrer.
-
-// Corrija o erro abaixo
-function precisoVisitar(paisesVisitados) {
-  var totalPaises = 193;
-  return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
-}
-function jaVisitei(paisesVisitados) {
-  return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
-}
-precisoVisitar(20);
-jaVisitei(20);
-
-
-*/
