@@ -13,3 +13,4 @@ var darCredito;
 
 darCredito = (possuiCarro && possuiCasa);
 darCredito = (possuiCarro && possuiCasa) ? 'Dar crédito ao cliente' : 'Negar crédito ao cliente';
+
