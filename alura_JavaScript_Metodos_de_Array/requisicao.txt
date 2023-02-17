@@ -2,13 +2,3 @@ https://guilhermeonrails.github.io/casadocodigo/livros.json
 
 
 
-
-Fazer uma requisão para o end-point acima 
-Estudar função assincrona
-
-
-ForEach 
-
-https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
-
-
